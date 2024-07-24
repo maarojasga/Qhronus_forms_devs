@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Desarrollador</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="h1">
+            <p>Queremos conocerte</p>
+            <h1>Háblanos de ti</h1>
+        </div>
+        <div class="inputs">
+            <form id="developerForm" action="/submit_developer" method="post">
+                <div class="inputscont">
+                    <p>Nombre</p>
+                    <input type="text" name="nombre" required>
+                </div>
+                <div class="inputscont">
+                    <p>Email</p>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="inputscont">
+                    <p>Ciudad</p>
+                    <input type="text" name="ciudad" required>
+                </div>
+                <div class="inputscont">
+                    <p>Celular</p>
+                    <input type="text" name="celular" required>
+                </div>
+                <div class="inputscont">
+                    <p>Tecnologías que conoce</p>
+                    <select name="tecnologias" multiple required>
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Java">Java</option>
+                        <option value="C#">C#</option>
+                        <option value="Ruby">Ruby</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                    <input type="text" name="otras_tecnologias" placeholder="Escribe otras tecnologías">
+                </div>
+                <div class="inputscont">
+                    <p>Expectativa salarial por hora (USD)</p>
+                    <input type="number" step="0.01" name="expectativa_salarial" required>
+                </div>
+                <div class="inputscont">
+                    <p>Años de experiencia</p>
+                    <input type="number" name="experiencia" required>
+                </div>
+                <div class="inputscont">
+                    <p>Disponibilidad para proyectos adicionales</p>
+                    <input type="checkbox" name="disponibilidad">
+                </div>
+                <div class="button">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
